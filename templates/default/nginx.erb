@@ -1,0 +1,3 @@
+<% if worker_rlimit_nofile != '' %>
+ULIMIT="-n <%= worker_rlimit_nofile %>"
+<% end %>

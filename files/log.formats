@@ -1,0 +1,20 @@
+log_format csv
+		'"$remote_addr",'
+		'$status,'
+		'"$time_iso8601",'
+		'"$scheme",'
+		'"$http_host",'
+		'"$request",'
+		'$body_bytes_sent,'
+		'"$http_referer",'
+		'"$http_user_agent"';
+
+log_format csv1 
+		'"$remote_addr",'
+		'$status,'
+		'"$http_host",'
+		'"$server_addr",'
+		'"$scheme",'
+		'"$time_iso8601",'
+		'$bytes_sent,'
+		'"$request"';
