@@ -1,0 +1,13 @@
+{
+  "name": "a2tar-nginx",
+  "version": "0.1.0",
+  "summary": "nginx puppet module",
+  "author": "A2Tar",
+  "description": "",
+  "dependencies": [],
+  "types": [],
+  "checksums": {},
+  "source": "https://github.com/a2tar/nginx.git",
+  "project_page": "https://github.com/a2tar/nginx",
+  "license": "MIT License"
+}
