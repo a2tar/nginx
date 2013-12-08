@@ -54,4 +54,11 @@ class nginx::config (
     require => Class["nginx::install"],
     notify  => Class["nginx::service"],
   }
+
+  file { "/var/www":
+    ensure => "directory",
+    owner  => "www-data",
+    group  => "www-data",
+    mode   => 775,
+  }
 }

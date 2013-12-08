@@ -1,0 +1,12 @@
+server {
+	listen      <%= ip %>:<%= port %><% if default_server %> default_server<% end %>;
+	root        <%= document_root %>;
+	index       <%= index %>;
+<%= scope.function_template(["nginx/sites/_server_name.erb"]) %>
+	access_log  /var/log/nginx/<%= title %>.access.log csv1;
+	error_log   /var/log/nginx/<%= title %>.error.log;
+	
+	location / {
+		try_files $uri $uri/ /<%= index %>?$query_string;
+	}
+}
